@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">AppTest</string>
+
+    <!--TextFields-->
+    <string name="ingrese_codigo_PIN">Ingrese código PIN</string>
+    <string name="ip_servidor_central">IP del servidor central</string>
+    <string name="ip_servidor">IP del servidor</string>
+    <string name="estacion">Estación</string>
+    <string name="busqueda_producto">Búsqueda de Producto</string>
+
+    <!--Módulos del sistema POS-->
+    <string name="venta">Venta</string>
+    <string name="ventas_previas">Ventas Previas</string>
+    <string name="orden_venta">Orden de Venta</string>
+    <string name="busqqueda_inventario">Búsqueda Inventario</string>
+    <string name="ordenes_previas">Órdenes Previas</string>
+
+    <!--Vistas-->
+    <string name="ingreso">Ingreso</string>
+    <string name="configuracion">Configuración</string>
+    <string name="almacen_central">Almacén Central</string>
+
+    <!--Botones-->
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="pago">Pago</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="tarjeta">Tarjeta</string>
+    <string name="pago_qr">Pago QR</string>
+    <string name="desea_salir_sistema">¿Desea salir del sistema?</string>
+    <string name="enter_PIN_code">Ingrese código PIN</string>
+    <string name="central_server_IP">IP del servidor central</string>
+    <string name="server_IP">IP del servidor</string>
+    <string name="station">Estación</string>
+    <string name="product_search">Búsqueda de Producto</string>
+    <string name="sale">Venta</string>
+    <string name="prev_sales">Ventas Previas</string>
+    <string name="sales_order">Orden de Venta</string>
+    <string name="inventory_search">Búsqueda Inventario</string>
+    <string name="previous_orders">Órdenes Previas</string>
+    <string name="login">Ingreso</string>
+    <string name="configuration">Configuración</string>
+    <string name="central_warehouse">Almacén Central</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yes">Si</string>
+    <string name="payment">Pago</string>
+    <string name="cash">Efectivo</string>
+    <string name="card">Tarjeta</string>
+    <string name="qr_payment">Pago QR</string>
+    <string name="exit_system">¿Desea salir del sistema?</string>
+
+
+    <!-- Plantilla para string
+    <string name=""></string>
+    -->
+</resources>

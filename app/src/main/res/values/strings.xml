@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">AppTest</string>
+
+    <!--TextFields-->
+    <string name="enter_PIN_code">Enter PIN code</string>
+    <string name="central_server_IP">Central server IP</string>
+    <string name="server_IP">Server IP</string>
+    <string name="station">Station</string>
+    <string name="product_search">Product Search</string>
+
+
+    <!--POS System Modules-->
+    <string name="sale">Sale</string>
+    <string name="prev_sales">Previous Sales</string>
+    <string name="sales_order">Sales Order</string>
+    <string name="inventory_search">Inventory Search</string>
+    <string name="previous_orders">Previous Orders</string>
+
+    <!--Views-->
+    <string name="login">Login</string>
+    <string name="configuration">Configuration</string>
+    <string name="central_warehouse">Central Warehouse</string>
+
+    <!--Buttons-->
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="payment">Payment</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="qr_payment">QR Payment</string>
+    <string name="exit_system">Do you want to exit the system?</string>
+    <string name="ingrese_codigo_PIN">Enter PIN code</string>
+    <string name="ip_servidor_central">Central server IP</string>
+    <string name="ip_servidor">Server IP</string>
+    <string name="estacion">Station</string>
+    <string name="busqueda_producto">Product Search</string>
+    <string name="venta">Sale</string>
+    <string name="ventas_previas">Previous Sales</string>
+    <string name="orden_venta">Sales Order</string>
+    <string name="busqqueda_inventario">Inventory Search</string>
+    <string name="ordenes_previas">Previous Orders</string>
+    <string name="ingreso">Login</string>
+    <string name="configuracion">Configuration</string>
+    <string name="almacen_central">Central Warehouse</string>
+    <string name="aceptar">Accept</string>
+    <string name="cancelar">Cancel</string>
+    <string name="si">Yes</string>
+    <string name="pago">Payment</string>
+    <string name="efectivo">Cash</string>
+    <string name="tarjeta">Card</string>
+    <string name="pago_qr">QR Payment</string>
+    <string name="desea_salir_sistema">Do you want to exit the system?</string>
+
+
+    <!-- Plantilla para string
+    <string name=""></string>
+    -->
+</resources>
