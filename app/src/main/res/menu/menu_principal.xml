@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@drawable/baseline_menu_24"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item
+        android:id="@+id/edit_action"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="@string/edit_action"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/delete_action"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="@string/delete_action"
+        app:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/share_action"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="Desconectar" />
+    <item
+        android:id="@+id/create_pdf_action"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Configuración" />
+    <item
+        android:id="@+id/print_action"
+        android:icon="@drawable/baseline_assignment_24"
+        android:title="Reportes" />
+    <item
+        android:id="@+id/send_action"
+        android:icon="@drawable/baseline_arrow_back_24"
+        android:title="Salir" />
+
+</menu>

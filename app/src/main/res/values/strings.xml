@@ -52,6 +52,8 @@
     <string name="tarjeta">Card</string>
     <string name="pago_qr">QR Payment</string>
     <string name="desea_salir_sistema">Do you want to exit the system?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <!-- Plantilla para string
