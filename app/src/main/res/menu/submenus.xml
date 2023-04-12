@@ -2,43 +2,30 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <group >
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="Settings"
+        app:showAsAction="never" />
 
     <item
-        android:id="@+id/desconectar"
+        android:id="@+id/share_action"
         android:icon="@drawable/baseline_exit_to_app_24"
         android:title="Desconectar"/>
-    </group>
 
-
-    <item
-        android:id="@+id/settings"
-        android:icon="@drawable/baseline_settings_24"
-        android:title="Configuración">
-
+    <item android:title="Configuración">
         <menu>
-            <item
-                android:checkable="false"
-                android:title="Conexión" />
-
-            <item
-                android:id="@+id/hardware"
-                android:title="Hardware">
-
+            <item android:title="Conexión" />
+            <item android:title="Hardware" >
                 <menu>
-
                     <item android:title="Impresora" />
-
                     <item android:title="Izipay Info" />
-
                 </menu>
             </item>
         </menu>
     </item>
 
-    <item
-        android:id="@+id/reports"
-        android:title="Reportes">
+    <item android:title="Reportes">
         <menu>
             <item android:title="Izipay" >
                 <menu>
@@ -56,4 +43,3 @@
         android:title="Salir" />
 
 </menu>
-

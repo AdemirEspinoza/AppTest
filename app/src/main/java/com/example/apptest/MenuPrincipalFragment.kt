@@ -3,6 +3,7 @@ package com.example.apptest
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 
@@ -40,5 +41,23 @@ class MenuPrincipalFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.settings -> {
+                // Acción a realizar cuando se selecciona el subítem 1
+                return true
+            }
+            R.id.hardware -> {
+                // Acción a realizar cuando se selecciona el subítem 2
+                return true
+            }
+            R.id.reports -> {
+                // Acción a realizar cuando se selecciona el ítem 2
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
     }
 }
