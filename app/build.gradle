@@ -45,7 +45,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0'
 
 
-    //Frame Layout
+    //Frame Container View
     implementation 'androidx.fragment:fragment-ktx:1.5.6'
 
 

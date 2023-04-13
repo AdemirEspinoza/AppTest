@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">AppTest</string>
 
+    <!-- Drawer Nav-->
+    <string name="navigation_drawer_open" translatable="false">Enter PIN code</string>
+    <string name="navigation_drawer_close" translatable="false">Enter PIN code</string>
+
     <!--TextFields-->
     <string name="ingrese_codigo_PIN">Ingrese código PIN</string>
     <string name="ip_servidor_central">IP del servidor central</string>
