@@ -17,6 +17,26 @@ import androidx.fragment.app.replace
 import com.google.android.material.navigation.NavigationView
 
 
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.submenus, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.edit_action) {
+            Toast.makeText(this, "Edición", Toast.LENGTH_SHORT).show()
+        }
+        return true
+    }
+}
+
+/*
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawer: DrawerLayout
@@ -26,7 +46,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar_main)*/
+        */
+/*val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar_main)*//*
+
         val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
 
@@ -41,6 +63,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
 
+*/
 /*
         supportFragmentManager.commit {
             replace<LogIpConfigFragment>(R.id.frameContainer)
@@ -73,7 +96,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-}*/
+}*//*
+
 
     }
 
@@ -102,4 +126,4 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         return super.onOptionsItemSelected(item)
     }
-}
+}*/

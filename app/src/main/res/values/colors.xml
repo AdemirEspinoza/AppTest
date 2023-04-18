@@ -9,4 +9,25 @@
     <color name="white">#FFFFFFFF</color>
 
     <color  name="green">#45CB85</color>
+
+   <!--Colores de Retail CS-->
+    <!--Featured Colors-->
+    <color  name="pos_primary">#24ADE3</color>
+    <color  name="pos_secondary">#273043</color>
+
+    <!--AnalogouS Colors-->
+    <color  name="pos_analogous1">#1B80FA</color>
+    <color  name="pos_analogous2">#1BF5FA</color>
+
+    <!--Text Colors-->
+    <color  name="pos_textcolor">#222222</color>
+
+    <!--Aditional and Neutral Colors-->
+    <color  name="pos_warning">#F02D3A</color>
+    <color  name="pos_success">#45CB85</color>
+    <color  name="pos_neutral">#18DBA8</color>
+    <color  name="pos_neutral2">#D2D5DF</color>
+    <color  name="pos_neutral3">#E5EEFA</color>
+
+
 </resources>

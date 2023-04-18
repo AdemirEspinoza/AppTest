@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Desconectar"/>
+    <item android:title="Configuración">
+        <menu>
+            <item android:title="Conexión" />
+            <item android:title="Hardware">
+                <menu>
+                    <item android:title="Impresora" />
+                    <item android:title="Izypay Info" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>
