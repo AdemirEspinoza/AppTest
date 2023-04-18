@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:isScrollContainer="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:isScrollContainer="false"
-=======
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
->>>>>>> origin/master
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    app:menu="@menu/activity_main_drawer">
+
+<!--    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">-->>
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar_main"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-<<<<<<< HEAD
-            android:background="#4EC8FF"
-            app:collapseIcon="@drawable/baseline_assignment_24"
-            app:layout_scrollFlags="scroll|enterAlways" />
-=======
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
+            android:background="#222222"
+            app:title="menu"
+            app:menu="@menu/activity_main_drawer"
+            app:navigationIcon="@drawable/baseline_exit_to_app_24"
             />
->>>>>>> origin/master
+
+
     </com.google.android.material.appbar.AppBarLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
