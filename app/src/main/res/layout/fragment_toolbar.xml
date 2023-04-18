@@ -11,16 +11,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#CFCFCF"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbarUser"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginHorizontal="18dp"
-            android:layout_marginVertical="10dp">
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="60dp">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvVendor"
@@ -39,7 +41,8 @@
                 android:text="Hour: {}"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toStartOf="@+id/gdMid"
-                app:layout_constraintStart_toEndOf="@+id/tvVendor" />
+                app:layout_constraintStart_toEndOf="@+id/tvVendor"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvCustomer"
@@ -70,15 +73,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <!--            <include
-                android:id="@+id/app_bar_main"
-                layout="@layout/app_bar_main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />-->
-
 
             <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/appBarLayout2"
@@ -94,7 +88,10 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.5" />
 
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     </FrameLayout>
 
@@ -124,5 +121,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
+
+
 
 </FrameLayout>

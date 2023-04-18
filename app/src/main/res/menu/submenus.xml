@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="Desconectar"/>
-    <item android:title="Configuración">
-        <menu>
+    <item
+        android:id="@+id/item_locationToLocation_overflowMenu"
+        android:title=""
+        android:enabled="false"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_menu_24"/>
+
+<!--        <menu>
             <item android:title="Conexión" />
             <item android:title="Hardware">
                 <menu>
@@ -12,5 +18,10 @@
                 </menu>
             </item>
         </menu>
-    </item>
+
+
+    </item>-->
+
+
+
 </menu>
