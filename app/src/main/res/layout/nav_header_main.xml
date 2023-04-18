@@ -3,7 +3,11 @@
     android:id="@+id/nav_header"
     android:layout_width="match_parent"
     android:layout_height="160dp"
+<<<<<<< HEAD
     android:background="#4EC8FF"
+=======
+    android:background="#5E1414"
+>>>>>>> origin/master
     android:clickable="true"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackgroundBorderless"
