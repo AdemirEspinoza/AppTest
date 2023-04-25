@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <style name="ToolbarTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="ToolbarTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="titleEnabled">false</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="TextH3">
+    <style name="TextH3" parent="Theme.MaterialComponents.NoActionBar">
         <item name="colorControlNormal">@color/white</item>
         <item name="titleTextColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="TextAppearance.AppCompat.H3">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/white</item>
+    <style name="MenuTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="background">@color/white</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
 </resources>

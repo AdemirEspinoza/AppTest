@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:isScrollContainer="true"
-    app:menu="@menu/activity_main_drawer"
-    tools:context=".MainActivity">
-
+    android:isScrollContainer="true">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="?attr/actionBarSize"
         android:fitsSystemWindows="true"
         app:menu="@menu/activity_main_drawer"
         android:layout_marginVertical="10dp"
-        style="@style/Theme.Design.NoActionBar"/>
+        app:title=" "
+        android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
 </LinearLayout>
+
+
+<!--
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:isScrollContainer="true"
+app:menu="@menu/activity_main_drawer"
+tools:context=".MainActivity">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="wrap_content"
+    android:layout_height="?attr/actionBarSize"
+    android:fitsSystemWindows="false"
+    app:menu="@menu/activity_main_drawer"
+    android:layout_marginVertical="10dp"
+    android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+</LinearLayout>-->

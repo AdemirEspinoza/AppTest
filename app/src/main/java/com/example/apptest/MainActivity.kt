@@ -3,18 +3,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
+import com.example.apptest.R.id.toolbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        val toolbar: Toolbar = findViewById(toolbar)
         setSupportActionBar(toolbar)
 
-        toolbar.setOverflowIcon(ContextCompat.getDrawable(this, R.drawable.baseline_menu_24))
+        toolbar.overflowIcon = ContextCompat.getDrawable(this, R.drawable.baseline_menu_24)
 
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
