@@ -16,5 +16,7 @@
         <item name="titleEnabled">false</item>
         <item name="windowActionBar">false</item>
         <item name="android:background">@color/white</item>
+
     </style>
+
 </resources>

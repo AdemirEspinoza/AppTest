@@ -27,4 +27,9 @@
         <item name="android:background">@color/white</item>
     </style>
 
+
+
+    <style name="Theme.App" parent="Widget.Material3.CardView.Outlined">
+    </style>
+
 </resources>

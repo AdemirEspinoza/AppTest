@@ -2,9 +2,9 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- White foreground. -->
     <item android:bottom="5dp" android:right="3dp"
-        android:top="350dp">
+        android:top="250dp">
         <shape>
-            <solid android:color="@color/pos_neutral3" />
+            <solid android:color="#FFFFFF" />
             <corners
                 android:bottomLeftRadius="15dp"
                 android:bottomRightRadius="15dp"/>
