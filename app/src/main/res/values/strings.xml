@@ -60,6 +60,11 @@
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
 
+    <!--Card View-->
+    <string name="nuevo">Nueva</string>
+    <string name="previo">Previa</string>
+
+
     <!-- Plantilla para string
     <string name=""></string>
     -->

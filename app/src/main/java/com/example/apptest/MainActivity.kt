@@ -13,10 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val toolbar: Toolbar = findViewById(toolbar)
-        setSupportActionBar(toolbar)
 
-        toolbar.overflowIcon = ContextCompat.getDrawable(this, R.drawable.baseline_menu_24)
 
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
