@@ -2,249 +2,57 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_sales"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                card_view:cardBackgroundColor="#FFFFFF"
-                card_view:cardCornerRadius="15dp"
-                card_view:cardElevation="5dp">
-
-                <include
-                    android:id="@+id/cv_new"
-                    layout="@layout/item_cardview_sales"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="start"
-                    card_view:layout_constraintBottom_toBottomOf="parent"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_sales_prev"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                card_view:cardBackgroundColor="#FFFFFF"
-                card_view:cardCornerRadius="15dp"
-                card_view:cardElevation="5dp">
-
-                <include
-                    android:id="@+id/cv_new"
-                    layout="@layout/item_cardview_sales"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="start"
-                    card_view:layout_constraintBottom_toBottomOf="parent"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_order"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                card_view:cardBackgroundColor="#FFFFFF"
-                card_view:cardCornerRadius="15dp"
-                card_view:cardElevation="5dp">
-
-                <include
-                    android:id="@+id/cv_new"
-                    layout="@layout/item_cardview_order"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="start"
-                    card_view:layout_constraintBottom_toBottomOf="parent"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_sales_prev2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                card_view:cardBackgroundColor="#FFFFFF"
-                card_view:cardCornerRadius="15dp"
-                card_view:cardElevation="5dp">
-
-                <include
-                    android:id="@+id/cv_new"
-                    layout="@layout/item_cardview_order"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="start"
-                    card_view:layout_constraintBottom_toBottomOf="parent"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_other"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                card_view:cardBackgroundColor="#FFFFFF"
-                card_view:cardCornerRadius="15dp"
-                card_view:cardElevation="5dp">
-
-                <include
-                    android:id="@+id/cv_new"
-                    layout="@layout/item_cardview_other"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="start"
-                    card_view:layout_constraintBottom_toBottomOf="parent"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_sales_other_prev"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                card_view:cardBackgroundColor="#FFFFFF"
-                card_view:cardCornerRadius="15dp"
-                card_view:cardElevation="5dp">
-
-                <include
-                    android:id="@+id/cv_new"
-                    layout="@layout/item_cardview_other"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="start"
-                    card_view:layout_constraintBottom_toBottomOf="parent"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintTop_toTopOf="parent" />
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-
-        <!--        <androidx.cardview.widget.CardView
-            android:id="@+id/card_order"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="10dp"
-            card_view:cardBackgroundColor="#FFFFFF"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="10dp">
-
-            <include
-                android:id="@+id/cv_new"
-                layout="@layout/item_cardview_order"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_gravity="start"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent" />
-
-            <include
-                android:id="@+id/cv_prev"
-                layout="@layout/item_cardview_order"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_gravity="end"
-                card_view:layout_constraintBottom_toBottomOf="@id/card_sales"
-                card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent" />
-        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_other"
-            android:layout_width="match_parent"
+            android:id="@+id/card_sales_new"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             card_view:cardBackgroundColor="#FFFFFF"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="10dp">
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="5dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintDimensionRatio="1:1"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent">
 
             <include
                 android:id="@+id/cv_new"
-                layout="@layout/item_cardview_other"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_gravity="start"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent" />
+                layout="@layout/item_cardview_sales" />
 
-            <include
-                android:id="@+id/cv_prev"
-                layout="@layout/item_cardview_other"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_gravity="end"
-                card_view:layout_constraintBottom_toBottomOf="@id/card_sales"
-                card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent" />
-        </androidx.cardview.widget.CardView>-->
-
-
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card_sales_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="5dp"
+            android:layout_gravity="end"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintDimensionRatio="1:1"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent">
+            <include
+                android:id="@+id/cv_new2"
+                layout="@layout/item_cardview_sales" />
+        </androidx.cardview.widget.CardView>
 
 
 </FrameLayout>
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-</LinearLayout>-->

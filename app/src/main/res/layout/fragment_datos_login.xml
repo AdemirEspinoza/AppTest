@@ -29,11 +29,6 @@
             android:text="@string/hello_blank_fragment"
             android:textColor="@color/pos_textcolor"
             android:textSize="22sp" />
-        <include
-            android:id="@+id/homePrincipal"
-            layout="@layout/fragment_home_sales"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </FrameLayout>
