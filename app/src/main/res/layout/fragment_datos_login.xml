@@ -8,8 +8,9 @@
 
 
     <LinearLayout
+        android:id="@+id/datosLogin2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="5dp">
 
@@ -20,12 +21,19 @@
             android:textColor="@color/pos_analogous1"
             android:textSize="35sp" />
 
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/hello_blank_fragment"
             android:textColor="@color/pos_textcolor"
             android:textSize="22sp" />
+        <include
+            android:id="@+id/homePrincipal"
+            layout="@layout/fragment_home_sales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </FrameLayout>
