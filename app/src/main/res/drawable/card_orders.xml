@@ -3,5 +3,5 @@
     android:shape="oval">
 
     <solid
-        android:color="@color/pos_secondary"/>
+        android:color="@color/pos_success"/>
 </shape>
