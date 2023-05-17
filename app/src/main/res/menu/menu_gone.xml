@@ -7,10 +7,10 @@
         android:title=""
         android:enabled="false"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/baseline_menu_24">
-
-
-
+        android:icon="@drawable/baseline_menu_24"
+        style="@style/Theme.MaterialComponents.NoActionBar">
     </item>
 
 </menu>
+
+

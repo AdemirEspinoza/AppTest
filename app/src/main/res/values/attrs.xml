@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item format="float" name="gdRight" type="integer">0.04</item>
+    <item format="float" name="gdLeft" type="integer">0.96</item>
+
+</resources>
