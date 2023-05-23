@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.fragment_search_stock_product)
 
 
     }
