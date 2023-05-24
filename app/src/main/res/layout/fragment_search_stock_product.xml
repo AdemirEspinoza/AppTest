@@ -4,184 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="horizontal"
     android:background="#EAF1FB"
     android:padding="10dp"
     >
 
 
-    <!--
-    <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".SearchStockProductFragment"
-        android:background="#EAF1FB"
-        android:orientation="horizontal">
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/viewTotal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#EAF1FB"
-            android:foregroundGravity="center"
-            android:padding="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            Inicio bloque 1
-
-            <TextView
-                android:id="@+id/tvEstilo"
-                style="@style/TextGrayPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Total"
-                app:layout_constraintEnd_toStartOf="@+id/tvPrecio"
-                app:layout_constraintHorizontal_weight="1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/et_Estilo_Subtitle"
-                style="@style/TextBlackPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:paddingVertical="1dp"
-                android:text="0"
-                app:layout_constraintEnd_toEndOf="@+id/tvEstilo"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvEstilo" />
-
-
-
-
-            <TextView
-                android:id="@+id/tvEstado"
-                style="@style/TextGrayPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Total 2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintHorizontal_weight="1"
-                app:layout_constraintStart_toEndOf="@+id/tvPrecio"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/et_Estado_Subtitle"
-                style="@style/TextBlackPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:paddingVertical="1dp"
-                android:text="0"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/tvEstado"
-                app:layout_constraintTop_toBottomOf="@+id/tvEstado" />
-            Fin bloque 1
-
-            Inicio bloque 2
-            <TextView
-                android:id="@+id/tvDescuentos"
-                style="@style/TextGrayPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Total"
-                app:layout_constraintEnd_toStartOf="@+id/tvMarca"
-                app:layout_constraintHorizontal_weight="1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_Estilo_Subtitle" />
-
-            <TextView
-                android:id="@+id/et_Descuentos_Subtitle"
-                style="@style/TextBlackPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:paddingVertical="2dp"
-                android:text="0"
-                app:layout_constraintEnd_toStartOf="@+id/et_Marca_Subtitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvDescuentos" />
-
-            <TextView
-                android:id="@+id/tvMarca"
-                style="@style/TextGrayPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Total 2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_weight="1"
-                app:layout_constraintStart_toEndOf="@+id/et_Precio_Subtitle"
-                app:layout_constraintTop_toBottomOf="@+id/et_Estado_Subtitle" />
-
-            <TextView
-                android:id="@+id/et_Marca_Subtitle"
-                style="@style/TextBlackPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:paddingVertical="2dp"
-                android:text="0"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/tvMarca"
-                app:layout_constraintTop_toBottomOf="@+id/tvMarca" />
-            Fin bloque 2
-
-            &lt;!&ndash;Inicio bloque 3&ndash;&gt;
-
-
-            <TextView
-                android:id="@+id/tvDepartamentos"
-                style="@style/TextGrayPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Total"
-                app:layout_constraintEnd_toStartOf="@+id/tvMarca"
-                app:layout_constraintHorizontal_weight="1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_Descuentos_Subtitle" />
-
-            <TextView
-                android:id="@+id/et_Departamentos_Subtitle"
-                style="@style/TextBlackPrimary"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:paddingVertical="2dp"
-                android:text="0"
-                app:layout_constraintEnd_toStartOf="@+id/et_Marca_Subtitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvDepartamentos" />
-
-            <Switch
-                android:id="@+id/switch1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TDA"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/et_Departamentos_Subtitle"
-                app:layout_constraintTop_toBottomOf="@+id/et_Marca_Subtitle"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-    </LinearLayout>-->
-
-    <FrameLayout
+<!--    <FrameLayout
         android:id="@+id/viewSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -243,7 +72,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tvTotal2"
                 app:layout_constraintTop_toBottomOf="@+id/tvTotal2" />
-            <!--        Segunda Fila-->
+            &lt;!&ndash;        Segunda Fila&ndash;&gt;
             <TextView
                 android:id="@+id/tvDesc"
                 style="@style/TextGrayPrimary"
@@ -287,7 +116,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tvTotal2"
                 app:layout_constraintTop_toBottomOf="@+id/tvMarca" />
-            <!--        Tercera Fila-->
+            &lt;!&ndash;        Tercera Fila&ndash;&gt;
             <TextView
                 android:id="@+id/tvDepartamento"
                 style="@style/TextGrayPrimary"
@@ -320,15 +149,174 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </FrameLayout>-->
+
+    <FrameLayout
+        android:id="@+id/viewSelect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#EAF1FB"
+        app:layout_constraintEnd_toStartOf="@+id/gdMid"
+        app:layout_constraintStart_toStartOf="@+id/gdStart"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewTotal1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAF1FB"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEstilo"
+                style="@style/TextGrayPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tvEstilo_subtitle"
+                style="@style/TextBlackPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEstilo" />
+            <TextView
+                android:id="@+id/tvDesc"
+                style="@style/TextGrayPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEstilo_subtitle" />
+            <TextView
+                android:id="@+id/tvDesc_subtitle"
+                style="@style/TextBlackPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+            <TextView
+                android:id="@+id/tvDepartamento"
+                style="@style/TextGrayPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDesc_subtitle" />
+            <TextView
+                android:id="@+id/tvDepartamento_subtitle"
+                style="@style/TextBlackPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDepartamento" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/viewSelect2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#EAF1FB"
+        app:layout_constraintEnd_toStartOf="@+id/gdEnd"
+        app:layout_constraintStart_toStartOf="@+id/gdMid"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewTotal2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAF1FB"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPrecio"
+                style="@style/TextGrayPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPrecio_subtitle"
+                style="@style/TextBlackPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrecio" />
+
+            <TextView
+                android:id="@+id/tvMarca"
+                style="@style/TextGrayPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrecio_subtitle" />
+
+            <TextView
+                android:id="@+id/tvMarca_subtitle"
+                style="@style/TextBlackPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMarca" />
+
+
+<!--            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMarca_subtitle"/>-->
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Switch"
+                tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMarca_subtitle"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </FrameLayout>
 
 
+
+<!--    Lineas guía-->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gdMid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.65" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gdStart"

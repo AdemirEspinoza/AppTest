@@ -11,20 +11,20 @@ import androidx.core.content.ContextCompat
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_search_stock_product)
+        setContentView(R.layout.activity_main)
 
 
     }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+/*    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.activity_main_drawer, menu)
         return true
-    }
+    }*/
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+/*    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.edit_action) {
             Toast.makeText(this, "Edición", Toast.LENGTH_SHORT).show()
         }
         return true
-    }
+    }*/
 }
 
