@@ -27,7 +27,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userDataFragment" />
 
-    <com.google.android.material.appbar.AppBarLayout
+    <FrameLayout
+        android:id="@+id/TopBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".fragment_home">
+
+    </FrameLayout>
+
+
+<!--    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/TopBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +50,9 @@
 
         app:liftOnScroll="true">
 
-        <com.google.android.material.appbar.MaterialToolbar
+
+
+        &lt;!&ndash;<com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar_custom1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,9 +66,9 @@
             app:subtitle="Subtitle"
             app:subtitleCentered="true"
             app:title="Title"
-            app:titleCentered="true">
+            app:titleCentered="true">&ndash;&gt;
 
-        </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>-->
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <!--</com.google.android.material.appbar.AppBarLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
