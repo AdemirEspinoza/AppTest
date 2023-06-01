@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LogClientLicFragment">
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeightSmall"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="?attr/textColorAlertDialogListItem"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/abc_select_dialog_padding_start_material"
+    android:paddingRight="?attr/dialogPreferredPadding"
+    android:paddingStart="@dimen/abc_select_dialog_padding_start_material"
+    android:paddingEnd="?attr/dialogPreferredPadding"
+    android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+    android:drawableStart="?android:attr/listChoiceIndicatorMultiple"
+    android:drawablePadding="20dp"
+    android:ellipsize="marquee" />
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>

@@ -2,9 +2,11 @@ package com.example.apptest
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.Window
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
@@ -16,7 +18,17 @@ import com.google.zxing.integration.android.IntentResult
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        //make the launcher screen buttons-options
+
+        supportFragmentManager.beginTransaction().replace(R.id.contenedor,HomeFragment()).commit()
+    }
+}
+
+/*    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -51,11 +63,7 @@ class MainActivity : AppCompatActivity() {
         }else{
             super.onActivityResult(requestCode, resultCode, data)
         }
-
-    }
-
-}
-
+    }*/
 
 /*class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

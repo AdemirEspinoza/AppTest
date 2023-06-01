@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -16,7 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.8"
+            android:layout_weight="0.6"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -47,7 +48,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.8"
+            android:layout_weight="0.6"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -88,7 +89,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_weight="1.2"
                 android:padding="5dp"
                 android:src="@drawable/scanner_icon"
                 android:background="@drawable/square_blue"/>
@@ -98,46 +99,83 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="1.5"
                 android:orientation="vertical">
                 <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextBlackPrimary"
+                    style="@style/TextBlackSecondary"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
                     android:text="@string/aceptar"/>
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextBlackPrimary"
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:id="@+id/planets_spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/aceptar"/>
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+                    <AutoCompleteTextView
+                        style="@style/TextBlackPrimary"
+                        android:background="@drawable/square_gray"
+                        android:id="@+id/autoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:inputType="none"
+                        android:textSize="10sp"
+                        android:text="AutoComplete" />
+                </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                />
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="1.5"
                 android:orientation="vertical">
                 <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextBlackPrimary"
+                    style="@style/TextBlackSecondary"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
                     android:text="@string/aceptar"/>
-                <View
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:id="@+id/planets_spinner2"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:background="#F48FB1" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+                    <AutoCompleteTextView
+                        style="@style/TextBlackPrimary"
+                        android:background="@drawable/square_gray"
+                        android:id="@+id/autoCompleteTextView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:inputType="none"
+                        android:textSize="10sp"
+                        android:text="AutoComplete" />
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                />
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -187,20 +225,14 @@
                         android:gravity="center"
                         android:text="0" />
                 </LinearLayout>-->
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="#80DEEA" />
-
+        <!--Fila 4-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:padding="10dp"
-            android:background="#9AE5EEFA"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#A6E6E6E6">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -208,39 +240,101 @@
                 android:layout_weight="2"
                 android:orientation="vertical">
                 <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextGrayPrimary"
+                    style="@style/TextGraySecondary"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
                     android:text="@string/aceptar"/>
                 <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextBlackPrimary"
+                    style="@style/TextBlackSecondary"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
+                    android:text="@string/aceptar"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextGraySecondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
+                    android:text="@string/aceptar"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextBlackSecondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
+                    android:text="@string/aceptar"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextGraySecondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
+                    android:text="@string/aceptar"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextBlackSecondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
                     android:text="@string/aceptar"/>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:orientation="vertical">
                 <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextBlackPrimary"
+                    style="@style/TextGraySecondary"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
                     android:text="@string/aceptar"/>
-                <View
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextBlackSecondary"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:background="#F48FB1" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
+                    android:text="@string/aceptar"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextGraySecondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
+                    android:text="@string/aceptar"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextBlackSecondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start|center"
+                    android:text="@string/aceptar"/>
+
+                <Switch
+                    android:id="@+id/idSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="10"
+                    android:text="TDA"
+                    android:onClick="onClick"/>
+
+
             </LinearLayout>
+
         </LinearLayout>
+        <!--Fila 5-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#2196F3" />
 
 
 
