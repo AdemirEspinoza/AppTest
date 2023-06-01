@@ -43,7 +43,7 @@
     <string name="venta">Sale</string>
     <string name="ventas_previas">Previous Sales</string>
     <string name="orden_venta">Sales Order</string>
-    <string name="busqqueda_inventario">Inventory Search</string>
+    <string name="busqueda_inventario">Inventory Search</string>
     <string name="ordenes_previas">Previous Orders</string>
     <string name="ingreso">Login</string>
     <string name="configuracion">Configuration</string>

@@ -6,19 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.GridLayout
-import androidx.cardview.widget.CardView
 import androidx.navigation.fragment.findNavController
 
-class HomeFragment : Fragment(R.layout.fragment_home) {
-
+class SearchFragment : Fragment(R.layout.fragment_search) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val btnCV = requireView().findViewById<CardView>(R.id.btn_search)
+        val btHome = requireView().findViewById<Button>(R.id.toolbar_custom1)
 
-        btnCV.setOnClickListener{
-            findNavController().navigate(R.id.action_homeFragment_to_searchFragment)
+        btHome.setOnClickListener{
+            findNavController().navigate(R.id.action_searchFragment_to_homeFragment)
         }
     }
+
 }

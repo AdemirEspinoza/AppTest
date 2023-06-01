@@ -1,4 +1,5 @@
 package com.example.apptest
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -7,24 +8,61 @@ import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.NavHostFragment
+import com.example.apptest.databinding.ActivityMainBinding
+import com.google.zxing.integration.android.IntentIntegrator
+import com.google.zxing.integration.android.IntentResult
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.btnScanner.setOnClickListener { initScanner() }
+
+    }
+
+    private fun initScanner() {
+        val integrator: IntentIntegrator = IntentIntegrator(this)
+        integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES)
+        integrator.setPrompt("Listo")
+        integrator.setTorchEnabled(false)
+        integrator.setBeepEnabled(true)
+        integrator.initiateScan()
+    }
+
+    @Deprecated("Deprecated in Java", ReplaceWith(
+        "super.onActivityResult(requestCode, resultCode, data)",
+        "androidx.appcompat.app.AppCompatActivity"
+    )
+    )
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+
+        val result : IntentResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
+        if(result !=null){
+            if (result.contents == null){
+                Toast.makeText(this, "Cancelado", Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(this, "El valor escaneado es: ${result.contents}", Toast.LENGTH_SHORT).show()
+            }
+        }else{
+            super.onActivityResult(requestCode, resultCode, data)
+        }
+
+    }
+
+}
+
+
+/*class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+    }
+}*/
 
-    }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.activity_main_drawer, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.edit_action) {
-            Toast.makeText(this, "Edición", Toast.LENGTH_SHORT).show()
-        }
-        return true
-    }
-}
 

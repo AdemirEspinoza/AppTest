@@ -2,77 +2,42 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
+    <include
+        android:id="@+id/userDataFragment"
+        layout="@layout/nav_header_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:liftOnScroll="true">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar_custom"
-            android:layout_width="match_parent"
-            app:contentInsetStartWithNavigation="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/pos_analogous1"
-            android:elevation="5dp"
-            app:layout_anchor="@+id/appBarLayout"
-            app:layout_collapseMode="pin"
-            app:contentInsetLeft="0dp"
-            app:contentInsetStart="0dp"
-            app:title="Title"
-            app:subtitle="Subtitle"
-            app:titleCentered="true"
-            app:subtitleCentered="true"
-            >
-
-        </com.google.android.material.appbar.MaterialToolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include
-        layout="@layout/content_main"
-        android:layout_width="match_parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedor"
+        android:name="com.example.apptest.HomeFragment"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/incTotal"
-        app:layout_constraintEnd_toEndOf="@+id/incTotal"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnScanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/userDataFragment"
+        tools:layout="@layout/fragment_home" />
 
-    <include
-        android:id="@+id/incTotal"
-        layout="@layout/fragment_toolbar"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnScanner"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Escanear código"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/gdEnd"
-        app:layout_constraintStart_toStartOf="@+id/gdStart" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-<!--
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:theme="@style/Theme.AppCompat.NoActionBar">
-
-    <include
-        android:id="@+id/app_bar_main"
-        layout="@layout/fragment_datos_login"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
--->
-
 
