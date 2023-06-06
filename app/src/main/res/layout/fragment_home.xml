@@ -7,7 +7,6 @@
     android:background="@color/white"
     android:fitsSystemWindows="true">
 
-
     <include
         android:id="@+id/userDataFragment"
         layout="@layout/fragment_user_data"
@@ -22,53 +21,11 @@
         layout="@layout/fragment_home_grid"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/TopBarLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userDataFragment" />
 
-    <FrameLayout
-        android:id="@+id/TopBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:context=".fragment_home">
-
-    </FrameLayout>
 
 
-<!--    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/TopBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:liftOnScroll="true">
-
-
-
-        &lt;!&ndash;<com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar_custom1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/pos_analogous1"
-            android:elevation="5dp"
-            app:contentInsetLeft="0dp"
-            app:contentInsetStart="0dp"
-            app:contentInsetStartWithNavigation="0dp"
-            app:layout_anchor="@+id/appBarLayout"
-            app:layout_collapseMode="pin"
-            app:subtitle="Subtitle"
-            app:subtitleCentered="true"
-            app:title="Title"
-            app:titleCentered="true">&ndash;&gt;
-
-        </com.google.android.material.appbar.AppBarLayout>-->
-
-    <!--</com.google.android.material.appbar.AppBarLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

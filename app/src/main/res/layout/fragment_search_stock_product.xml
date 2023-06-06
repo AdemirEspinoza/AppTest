@@ -3,23 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <!-- Fila 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.6"
+            android:layout_weight="1"
             android:orientation="horizontal"
-            android:padding="8dp">
+            android:padding="8dp"
+            tools:ignore="NestedWeights">
 
             <androidx.appcompat.widget.AppCompatTextView
                 style="@style/TextBlackPrimary"
@@ -48,7 +49,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.6"
+            android:layout_weight="1"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -93,12 +94,15 @@
                 android:padding="5dp"
                 android:src="@drawable/scanner_icon"
                 android:background="@drawable/square_blue"/>
+
+
+
         </LinearLayout>
         <!--Fila 3-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -107,13 +111,14 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1.5"
                 android:orientation="vertical">
+
                 <androidx.appcompat.widget.AppCompatTextView
                     style="@style/TextBlackSecondary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:gravity="start|center"
-                    android:text="@string/aceptar"/>
+                    android:text="@string/aceptar" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -184,52 +189,10 @@
 
         </LinearLayout>
 
-        <!--        <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.8"
-                    android:orientation="horizontal"
-                    android:padding="8dp">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextBlackPrimary"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
-                        android:gravity="center"
-                        android:text="@string/busqueda_inventario" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextBlackPrimary"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
-                        android:background="#B71C1C"
-                        android:gravity="center"
-                        android:text="@string/busqueda_inventario" />
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="#880E4F"
-                        android:gravity="center"
-                        android:src="@drawable/shopping_basket_24" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextBlackPrimary"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="#880E4F"
-                        android:gravity="center"
-                        android:text="0" />
-                </LinearLayout>-->
-        <!--Fila 4-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="5"
             android:orientation="horizontal"
             android:padding="8dp"
             android:background="#A6E6E6E6">
@@ -330,19 +293,7 @@
 
         </LinearLayout>
         <!--Fila 5-->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="#2196F3" />
 
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="#80CBC4" />
 
     </LinearLayout>
 

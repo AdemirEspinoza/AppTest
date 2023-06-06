@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:padding="7dp"
+    android:paddingStart="23dp"
+    android:paddingEnd="23dp"
     tools:context=".HomeGridFragment">
 
     <GridLayout
@@ -42,6 +43,7 @@
             android:layout_margin="5dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="4dp"
+            android:clickable="true"
             tools:ignore="MissingConstraints">
 
             <include
@@ -66,6 +68,7 @@
             tools:ignore="MissingConstraints">
 
             <include
+                android:id="@+id/btnIrPantalla3"
                 layout="@layout/item_cardview_sales_previous"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -159,6 +162,7 @@
             app:cardElevation="4dp">
 
             <include
+                android:id="@+id/btnIrPantalla2"
                 layout="@layout/item_cardview_other_search"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

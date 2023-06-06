@@ -21,10 +21,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         //make the launcher screen buttons-options
-
-        supportFragmentManager.beginTransaction().replace(R.id.contenedor,HomeFragment()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.contenedor,HomeFragment() )
     }
 }
 
@@ -34,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnScanner.setOnClickListener { initScanner() }
-
     }
 
     private fun initScanner() {

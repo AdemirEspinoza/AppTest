@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/pos_secondary"
+    android:padding="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -17,38 +19,53 @@
 
         <FrameLayout
             android:id="@+id/viewSelect"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/gdMid"
             app:layout_constraintStart_toStartOf="@+id/gdStart"
             app:layout_constraintTop_toTopOf="parent">
+
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewTotal1"
+                android:id="@+id/configuracion"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/pos_secondary"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/logoRetail"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:src="@drawable/logo_rcs_alt2"
+                    android:id="@+id/icon_config"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/square_ligth_gray"
+                    android:scaleType="fitEnd"
+                    app:layout_constraintBottom_toTopOf="@+id/txtConfig"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="@+id/txtConfig"
+                    app:layout_constraintStart_toStartOf="@+id/txtConfig"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_settings_white" />
+
+                <TextView
+                    android:id="@+id/txtConfig"
+                    style="@style/TextGrayPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="7dp"
+                    android:text="@string/configuracion"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </FrameLayout>
 
         <FrameLayout
             android:id="@+id/viewSelect2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/gdEnd"
@@ -64,39 +81,14 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/ivAction3"
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:scaleType="fitEnd"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:srcCompat="@drawable/computer" />
-
-                <TextView
-                    android:id="@+id/tvEstilo2"
-                    style="@style/TextGrayPrimary"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="7dp"
-                    android:text="000000000"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/ivAction3"
-                    app:layout_constraintEnd_toStartOf="@+id/ivAction3"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/ivAction3" />
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/ivAction2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginTop="5dp"
                     android:scaleType="fitEnd"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tvEstilo"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="@+id/tvEstilo"
+                    app:layout_constraintStart_toStartOf="@+id/tvEstilo"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/computer" />
+                    app:srcCompat="@drawable/icon_settings_white" />
 
                 <TextView
                     android:id="@+id/tvEstilo"
@@ -104,17 +96,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingEnd="7dp"
-                    android:text="000000000"
+                    android:text="Cerrar Sesión"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
+                    android:textSize="10sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/ivAction2"
-                    app:layout_constraintEnd_toStartOf="@+id/ivAction2"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/ivAction2" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>
+
+
         <!--    Lineas guía-->
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdMid"
@@ -135,13 +127,4 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="@integer/gdLeft" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <!--<include
-        layout="@layout/fragment_home"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />-->
-
 </androidx.constraintlayout.widget.ConstraintLayout>

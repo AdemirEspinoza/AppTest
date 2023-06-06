@@ -10,13 +10,6 @@ import android.widget.Spinner
 import androidx.navigation.fragment.findNavController
 
 class SearchFragment : Fragment(R.layout.fragment_search) {
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-        val btHome = requireView().findViewById<Button>(R.id.toolbar_custom1)
 
-        btHome.setOnClickListener{
-            findNavController().navigate(R.id.action_searchFragment_to_homeFragment)
-        }
-    }
 }

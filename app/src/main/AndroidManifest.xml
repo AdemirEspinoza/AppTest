@@ -12,6 +12,9 @@
         android:hardwareAccelerated="true"
         android:theme="@style/Theme.RETAILCS"
         tools:targetApi="31">
+
+
+
         <activity
             android:name=".MainActivity"
             android:hardwareAccelerated="true"
