@@ -26,8 +26,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userDataFragment"
-        tools:layout="@layout/fragment_user_data"
+        tools:layout="@layout/fragment_log_config_ip"
         app:navGraph="@navigation/navigation_search"/>
+
+<!--    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedor"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnScanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userDataFragment"
+        tools:layout="@layout/fragment_user_data"
+        app:navGraph="@navigation/navigation_search"/>-->
 
     <include
         android:id="@+id/btnScanner"

@@ -12,10 +12,10 @@ class userDataFragment : Fragment(R.layout.fragment_user_data) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val btnIr = requireView().findViewById<CardView>(R.id.btnIrPantalla2)
+        val btnIr = requireView().findViewById<CardView>(R.id.btnLogIpConfig)
 
         btnIr.setOnClickListener {
-            findNavController().navigate(R.id.action_userDataFragment2_to_searchFragment)
+            findNavController().navigate(R.id.action_logIpConfigFragment_to_logClientLicFragment)
         }
 
     }

@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //make the launcher screen buttons-options
-        supportFragmentManager.beginTransaction().replace(R.id.contenedor,HomeFragment() )
+        supportFragmentManager.beginTransaction().replace(R.id.contenedor,LogIpConfigFragment() )
     }
 }
 

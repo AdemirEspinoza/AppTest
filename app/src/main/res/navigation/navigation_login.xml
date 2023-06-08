@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_login"
+    app:startDestination="@id/logIpConfigFragment">
+
+    <fragment
+        android:id="@+id/logIpConfigFragment"
+        android:name="com.example.apptest.LogIpConfigFragment"
+        android:label="LogIpConfigFragment" >
+        <action
+            android:id="@+id/action_logIpConfigFragment_to_logClientLicFragment"
+            app:destination="@id/logClientLicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logClientLicFragment"
+        android:name="com.example.apptest.LogClientLicFragment"
+        android:label="LogClientLicFragment" >
+        <action
+            android:id="@+id/action_logClientLicFragment_to_logPinFragment"
+            app:destination="@id/logPinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logPinFragment"
+        android:name="com.example.apptest.LogPinFragment"
+        android:label="LogPinFragment" />
+</navigation>

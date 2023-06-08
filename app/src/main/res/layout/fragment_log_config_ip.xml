@@ -1,58 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-
+        <!-- Bloque Tittle -->
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/pos_primary">
 
-            <include
-                layout="@layout/app_bar_main"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.5"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:background="#F48FB1" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:background="#CE93D8" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:background="#B39DDB" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:background="#9FA8DA" />
-
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextWhitePrimary"
+                android:gravity="center_vertical"
+                android:text="@string/configuracion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
         </LinearLayout>
 
+        <!-- Textfield IP Servidor Central -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ipServiCentral"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="Ingrese código PIN"
+            android:padding="15dp"
+            android:textColorHint="#5C273043"
+            app:boxStrokeColor="@color/pos_success"
+            app:helperTextTextColor="@color/pos_secondary"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/pos_success">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ipServiCentralEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/pos_secondary" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Textfield IP Servidor -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ipServi"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="Ingrese código PIN"
+            android:padding="15dp"
+            android:textColorHint="#5C273043"
+            app:boxStrokeColor="@color/pos_success"
+            app:helperTextTextColor="@color/pos_secondary"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/pos_success">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ipServiEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/pos_secondary" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Textfield Estación -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/estacion"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="Ingrese código PIN"
+            android:padding="15dp"
+            android:textColorHint="#5C273043"
+            app:boxStrokeColor="@color/pos_success"
+            app:helperTextTextColor="@color/pos_secondary"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/pos_success">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/estacionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/pos_secondary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Boton Aceptar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:paddingEnd="15dp">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogIpConfig"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="@string/aceptar"
+                android:background="@drawable/square_blue"/>
+
+        </LinearLayout>
     </LinearLayout>
+</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
