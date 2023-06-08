@@ -1,4 +1,5 @@
 package com.example.apptest
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,12 +13,13 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.NavHostFragment
 import com.example.apptest.databinding.ActivityMainBinding
-import com.google.zxing.integration.android.IntentIntegrator
+
 import com.google.zxing.integration.android.IntentResult
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
+    @SuppressLint("CommitTransaction")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:fitsSystemWindows="true">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
 
 
-    <include
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/fragment_search_stock_product"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="#EF9A9A" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#F48FB1"
+                android:numColumns="4"
+                tools:listitem="@layout/recyclerview_item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="#9FA8DA" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+<!--    <include
         android:id="@+id/gridLayout"
         layout="@layout/fragment_search_stock_product"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="731dp"
         android:layout_marginBottom="2dp"
         android:columnCount="2"
         android:rowCount="3"
@@ -27,10 +61,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvList"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:padding="10dp"
         android:scrollbarStyle="outsideOverlay"
-        app:layout_constraintBottom_toTopOf="@+id/TopBarLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,36 +71,5 @@
         tools:ignore="MissingConstraints"
         tools:listitem="@layout/recycler_store_result" />
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/TopBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
 
-        app:liftOnScroll="true">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar_custom1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/pos_analogous1"
-            android:elevation="5dp"
-            app:contentInsetLeft="0dp"
-            app:contentInsetStart="0dp"
-            app:contentInsetStartWithNavigation="0dp"
-            app:layout_anchor="@+id/appBarLayout"
-            app:layout_collapseMode="pin"
-            app:subtitle="Subtitle"
-            app:subtitleCentered="true"
-            app:title="Title"
-            app:titleCentered="true">
-
-        </com.google.android.material.appbar.MaterialToolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>-->
