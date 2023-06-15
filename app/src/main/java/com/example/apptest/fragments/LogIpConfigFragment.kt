@@ -8,25 +8,21 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 
 import com.example.apptest.R
+import com.example.apptest.databinding.FragmentLogConfigIpBinding
+import com.example.apptest.util.viewBinding
 
 /**
  * A simple [Fragment] subclass.
 
  */
-class LogIpConfigFragment : Fragment() {
+class LogIpConfigFragment : Fragment(R.layout.fragment_log_config_ip) {
 
+    private val binding by viewBinding(FragmentLogConfigIpBinding::bind)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_log_config_ip, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        binding.btnLogIpConfig.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_logIpConfigFragment_to_logClientLicFragment)}
 
-        view.btnLogIpConfig.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_logIpConfigFragment_to_logClientLicFragment)}
-
-        return view
     }
-
 }
