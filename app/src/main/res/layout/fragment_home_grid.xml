@@ -162,7 +162,7 @@
             app:cardElevation="4dp">
 
             <include
-                android:id="@+id/btnIrPantalla2"
+                android:id="@+id/btnIrViewSearch"
                 layout="@layout/item_cardview_other_search"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

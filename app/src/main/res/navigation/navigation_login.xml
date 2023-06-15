@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/logIpConfigFragment"
-        android:name="com.example.apptest.LogIpConfigFragment"
+        android:name="com.example.apptest.fragments.LogIpConfigFragment"
         android:label="LogIpConfigFragment"
         tools:layout="@layout/fragment_log_config_ip">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/logClientLicFragment"
-        android:name="com.example.apptest.LogClientLicFragment"
+        android:name="com.example.apptest.fragments.LogClientLicFragment"
         android:label="LogClientLicFragment"
         tools:layout="@layout/fragment_log_client_lic">
         <action
@@ -25,7 +25,17 @@
     </fragment>
     <fragment
         android:id="@+id/logPinFragment"
-        android:name="com.example.apptest.LogPinFragment"
+        android:name="com.example.apptest.fragments.LogCPinFragment"
         android:label="LogPinFragment"
-        tools:layout="@layout/fragment_log_pin"/>
+        tools:layout="@layout/fragment_log_pin">
+        <action
+            android:id="@+id/action_logPinFragment_to_navigation_search"
+            app:destination="@id/navigation_search" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.apptest.MainActivity2"
+        android:label="activity_main2"
+        tools:layout="@layout/fragment_home" />
+    <include app:graph="@navigation/navigation_search" />
 </navigation>
