@@ -29,13 +29,21 @@
         android:label="LogPinFragment"
         tools:layout="@layout/fragment_log_pin">
         <action
-            android:id="@+id/action_logPinFragment_to_navigation_search"
-            app:destination="@id/navigation_search" />
+            android:id="@+id/action_logPinFragment_to_datosLoginFragment"
+            app:destination="@id/datosLoginFragment" />
     </fragment>
-    <activity
-        android:id="@+id/mainActivity2"
-        android:name="com.example.apptest.MainActivity2"
-        android:label="activity_main2"
-        tools:layout="@layout/fragment_home" />
-    <include app:graph="@navigation/navigation_search" />
+    <fragment
+        android:id="@+id/datosLoginFragment"
+        android:name="com.example.apptest.DatosLoginFragment"
+        android:label="DatosLoginFragment"
+        tools:layout="@layout/fragment_datos_login">
+        <action
+            android:id="@+id/action_datosLoginFragment_to_searchStockProductFragment"
+            app:destination="@id/searchStockProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchStockProductFragment"
+        android:name="com.example.apptest.SearchStockProductFragment"
+        android:label="SearchStockProductFragment"
+        tools:layout="@layout/fragment_search_stock_product"/>
 </navigation>
