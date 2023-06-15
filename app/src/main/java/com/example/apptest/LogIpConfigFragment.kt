@@ -6,26 +6,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.navigation.fragment.findNavController
 
-class LogIpConfigFragment : Fragment(R.layout.fragment_log_config_ip)
 
-override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    super.onViewCreated(view, savedInstanceState)
+/**
+ * A simple [Fragment] subclass.
+ */
+class LogIpConfigFragment : Fragment() {
 
-    val btnIr = requireView().findViewById
-    <CardView>(R.id.btnLogIpConfig)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_log_config_ip, container, false)
 
-    btnIr.setOnClickListener {
-        findNavController().navigate(R.id.action_logIpConfigFragment_to_logClientLicFragment)
+        view.textview1.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_logIpConfigFragment_to_logClientLicFragment)}
+
+        return view
     }
 
 }
-
-fun requireView(): Any {
-    TODO("Not yet implemented")
-}
-}
-
-

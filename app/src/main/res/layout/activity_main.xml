@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <include
         android:id="@+id/userDataFragment"
@@ -16,31 +17,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/contenedor"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@+id/btnScanner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userDataFragment"
-        tools:layout="@layout/fragment_log_config_ip"
-        app:navGraph="@navigation/navigation_search"/>
 
-<!--    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/contenedor"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@+id/btnScanner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userDataFragment"
-        tools:layout="@layout/fragment_user_data"
-        app:navGraph="@navigation/navigation_search"/>-->
+        app:navGraph="@navigation/navigation_login" />
 
     <include
         android:id="@+id/btnScanner"

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_login"
     app:startDestination="@id/logIpConfigFragment">
 
     <fragment
         android:id="@+id/logIpConfigFragment"
         android:name="com.example.apptest.LogIpConfigFragment"
-        android:label="LogIpConfigFragment" >
+        android:label="LogIpConfigFragment"
+        tools:layout="@layout/fragment_log_config_ip">
         <action
             android:id="@+id/action_logIpConfigFragment_to_logClientLicFragment"
             app:destination="@id/logClientLicFragment" />
@@ -15,7 +17,8 @@
     <fragment
         android:id="@+id/logClientLicFragment"
         android:name="com.example.apptest.LogClientLicFragment"
-        android:label="LogClientLicFragment" >
+        android:label="LogClientLicFragment"
+        tools:layout="@layout/fragment_log_client_lic">
         <action
             android:id="@+id/action_logClientLicFragment_to_logPinFragment"
             app:destination="@id/logPinFragment" />
@@ -23,5 +26,6 @@
     <fragment
         android:id="@+id/logPinFragment"
         android:name="com.example.apptest.LogPinFragment"
-        android:label="LogPinFragment" />
+        android:label="LogPinFragment"
+        tools:layout="@layout/fragment_log_pin"/>
 </navigation>

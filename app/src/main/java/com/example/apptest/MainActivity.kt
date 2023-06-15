@@ -16,6 +16,14 @@ import com.example.apptest.databinding.ActivityMainBinding
 
 import com.google.zxing.integration.android.IntentResult
 
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
+
+/*
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
@@ -26,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         //make the launcher screen buttons-options
         supportFragmentManager.beginTransaction().replace(R.id.contenedor,LogIpConfigFragment() )
     }
-}
+}*/
 
 /*    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
