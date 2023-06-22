@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_log_config_ip">
         <action
             android:id="@+id/action_logIpConfigFragment_to_logClientLicFragment"
-            app:destination="@id/logClientLicFragment" />
+            app:destination="@id/logClientLicFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/logClientLicFragment"
@@ -21,7 +23,9 @@
         tools:layout="@layout/fragment_log_client_lic">
         <action
             android:id="@+id/action_logClientLicFragment_to_logPinFragment"
-            app:destination="@id/logPinFragment" />
+            app:destination="@id/logPinFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/logPinFragment"

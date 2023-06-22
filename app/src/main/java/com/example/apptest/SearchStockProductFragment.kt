@@ -12,4 +12,7 @@ class SearchStockProductFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_search_stock_product, container, false)
     }
+
+
 }
+

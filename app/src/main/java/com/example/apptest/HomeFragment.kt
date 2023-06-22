@@ -23,6 +23,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.btnBusqueda.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_searchStockProductFragment)}
 
+
     }
 }
 
