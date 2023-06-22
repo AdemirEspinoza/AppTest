@@ -25,20 +25,20 @@
     </fragment>
     <fragment
         android:id="@+id/logPinFragment"
-        android:name="com.example.apptest.fragments.LogCPinFragment"
+        android:name="com.example.apptest.fragments.LogPinFragment"
         android:label="LogPinFragment"
         tools:layout="@layout/fragment_log_pin">
         <action
-            android:id="@+id/action_logPinFragment_to_datosLoginFragment"
-            app:destination="@id/datosLoginFragment" />
+            android:id="@+id/action_logPinFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/datosLoginFragment"
-        android:name="com.example.apptest.DatosLoginFragment"
-        android:label="DatosLoginFragment"
-        tools:layout="@layout/fragment_datos_login">
+        android:id="@+id/homeFragment"
+        android:name="com.example.apptest.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_datosLoginFragment_to_searchStockProductFragment"
+            android:id="@+id/action_homeFragment_to_searchStockProductFragment"
             app:destination="@id/searchStockProductFragment" />
     </fragment>
     <fragment

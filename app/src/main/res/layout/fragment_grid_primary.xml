@@ -26,7 +26,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/gdEnd"
             app:layout_constraintStart_toStartOf="@+id/gdStart"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,8 +60,8 @@
                         android:orientation="horizontal">
 
                         <include
-                            android:id="@+id/btnIrPantalla323"
-                            layout="@layout/item_cardview_sales_previous"
+                            android:id="@+id/btnVentaN"
+                            layout="@layout/item_cardview_sales_new"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="4" />
@@ -73,7 +74,7 @@
                             android:background="?android:attr/listDivider" />
 
                         <include
-                            android:id="@+id/btnIrPantalla3"
+                            android:id="@+id/btnVentaP"
                             layout="@layout/item_cardview_sales_previous"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -87,7 +88,7 @@
                         android:layout_weight="0.5"
                         android:gravity="start|center"
                         android:padding="1dp"
-                        android:text="Ventas"
+                        android:text="Órdenes"
                         android:textColor="@color/black"
                         android:textSize="12sp" />
                     <LinearLayout
@@ -98,8 +99,8 @@
                         android:orientation="horizontal">
 
                         <include
-                            android:id="@+id/btnIrPantallasdsdf"
-                            layout="@layout/item_cardview_sales_previous"
+                            android:id="@+id/btnOrdenN"
+                            layout="@layout/item_cardview_order_new"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="4" />
@@ -112,8 +113,8 @@
                             android:background="?android:attr/listDivider" />
 
                         <include
-                            android:id="@+id/btnIrPantallaocie"
-                            layout="@layout/item_cardview_sales_previous"
+                            android:id="@+id/btnOrdenP"
+                            layout="@layout/item_cardview_order_previous"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="4" />
@@ -126,7 +127,7 @@
                         android:layout_weight="0.5"
                         android:gravity="start|center"
                         android:padding="1dp"
-                        android:text="Ventas"
+                        android:text="Otros"
                         android:textColor="@color/black"
                         android:textSize="12sp" />
                     <LinearLayout
@@ -137,11 +138,12 @@
                         android:orientation="horizontal">
 
                         <include
-                            android:id="@+id/btn32"
-                            layout="@layout/item_cardview_sales_previous"
+                            android:id="@+id/btnBusqueda"
+                            layout="@layout/item_cardview_other_search"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="4" />
+                            android:layout_weight="4"
+                            />
 
                         <View
                             android:id="@+id/divider3"
@@ -151,8 +153,8 @@
                             android:background="?android:attr/listDivider" />
 
                         <include
-                            android:id="@+id/btnIrPantalladcsdc"
-                            layout="@layout/item_cardview_sales_previous"
+                            android:id="@+id/btnPanel"
+                            layout="@layout/item_cardview_other_panel"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="4" />
@@ -188,5 +190,3 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
-
-

@@ -5,7 +5,9 @@
     android:layout_height="150dp"
     android:padding="10dp"
     card_view:cardCornerRadius="15dp"
-    card_view:cardBackgroundColor="@color/pos_secondary">
+    card_view:cardBackgroundColor="@color/pos_secondary"
+    android:clickable="true"
+    android:focusable="true">
 
 
     <LinearLayout
@@ -13,35 +15,35 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="7"
-            android:background="@color/pos_secondary"
-            android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:background="@color/pos_secondary"
+                    android:gravity="center">
 
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:contentDescription="TODO"
-                android:src="@drawable/baseline_assignment_24" />
-        </LinearLayout>
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/baseline_assignment_24" />
+                </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="#FFFFFF"
-            android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="#FFFFFF"
+                    android:gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Búsqueda"
-                android:textColor="@color/pos_secondary"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Búsqueda"
+                        android:textColor="@color/pos_secondary"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
     </LinearLayout>
 
